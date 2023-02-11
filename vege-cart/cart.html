@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <title>Cart</title>
+</head>
+<body>
+<h1>Cart</h1>
+<div class="container">
+    <div class="items">
+        <div class="veg">
+
+            
+            <div class="single-item">
+                <img src="potato.png" alt="">
+                <div class="single-item-info">
+                <h1>Potato</h1>
+                <p class="price" id="item-price">$3</p>
+            </div>
+            <div class="single-item-price">
+                <input type="number" name="quantity" value="0" min="0">
+                <button onclick="AddToCart(this)">Add</button>
+            </div>
+            </div>
+
+
+            <div class="single-item"> <img src="carrot.png" alt="">
+                <div class="single-item-info">
+                <h1>Carrot</h1>
+                <p class="price" id="item-price">$4</p>
+            </div>
+            <div class="single-item-price">
+                <input type="number"  name="quantity" value="0" min="0">
+                <button onclick="AddToCart(this)">Add</button>
+            </div></div>
+
+
+            <div class="single-item"> <img src="tomato.png" alt="">
+                <div class="single-item-info">
+                <h1>Tomato</h1>
+                <p class="price" id="item-price">$2</p>
+            </div>
+            <div class="single-item-price">
+                <input type="number" name="quantity" value="0" min="0">
+                <button onclick="AddToCart(this)">Add</button>
+            </div></div>
+        </div>
+    </div>
+
+
+    <div class="cart">
+        <div class="cart-items"></div>
+        <div class="total"></div>
+    </div>
+</div>    
+
+<script src="script1.js"></script>
+</body>
+</html>
